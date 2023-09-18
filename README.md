@@ -50,6 +50,6 @@ $ ls -la
                                                          
 
 ## Ref
-* Olumide Micheal Tolulope <olumidemicheal7@gmail.com>
-* Ahmed Gbadamosi
+* Ryan Tsihugwa <tsihugwa2018@gmail.com>
+* Glory Valery
 
