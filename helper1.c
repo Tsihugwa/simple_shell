@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * help_alias - help function to explain how the associated function works
+ * help_alias - provides help and usage information for the "alias" command
  */
 void help_alias(void)
 {
@@ -11,7 +11,7 @@ void help_alias(void)
 }
 
 /**
- * help_cd - help function to explain how the associated function works
+ * help_cd -  provides help and usage information for the "cd" command.
  */
 void help_cd(void)
 {
@@ -20,7 +20,7 @@ void help_cd(void)
 }
 
 /**
- * help_env - help function to explain how the associated function works
+ * help_env - provides help and usage information for the "env" command
  */
 void help_env(void)
 {
@@ -30,7 +30,7 @@ void help_env(void)
 }
 
 /**
- * help_exit - help function to explain how the associated function works
+ * help_exit -  provides help and usage information for the "exit" command
  */
 void help_exit(void)
 {
@@ -39,7 +39,7 @@ void help_exit(void)
 }
 
 /**
- * help_help - help function to explain how the associated function works
+ * help_help - provides help and usage information for the "help" command
  */
 void help_help(void)
 {
