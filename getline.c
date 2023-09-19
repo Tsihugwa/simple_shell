@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * _getline - custom getline currently reads 1 char at a time
+ * _getline - reads input from the standard input (stdin) and stores it in a
+ * dynamically allocated buffer.
  * @buffer: address of pointer to input commands buffer
  * @limit: maxsize of input character string, realloc if necessary
  *
