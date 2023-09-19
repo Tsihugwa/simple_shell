@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * is_path - checks if input command is part of directory PATH
+ * is_path - checks if input command includes a directory PATH
  * @command: a command
  *
  * Return: 1 if path, 0 if no path
@@ -23,7 +23,7 @@ int is_path(char *command)
 
 /**
  * exec_builtins - custom function to execute builtin commands
- * @arginv: arguments inventory
+ * @arginv: pointer to arguments inventory
  *
  * Return: 1 on success, 0 on failure
  */
@@ -60,7 +60,7 @@ int exec_builtins(arg_inventory_t *arginv)
 }
 
 /**
- * exec_error_exit - frees all and exits if exec error
+ * exec_error_exit - handle errors during command execution and exit shell
  * @msg: message to display
  * @command: command to free
  * @_environ: env double pointer to free
@@ -80,7 +80,8 @@ void exec_error_exit(char *msg, char *command, char **_environ,
 }
 
 /**
- * exec_path - custom function to execute from PATH
+ * exec_path - executing commands that are not built in and are part of the
+ * system PATH
  * @command: command to execute
  * @arginv: arg inventory
  *
