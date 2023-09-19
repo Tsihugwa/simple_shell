@@ -1,7 +1,9 @@
 #include "shell.h"
 
 /**
- * alias_list - builtin func to set alias list
+ * alias_list - builtin function that
+ *initializes an empty alias list and returns a pointer to the head of the list
+ *(which is initially NULL)
  *
  * Return: 0 on success
  */
