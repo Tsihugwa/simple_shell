@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * add_node_env - adds new node to end of linked list
+ * add_node_env - adds new node(variable) to end of linked list
  * @head: beginning of linked list
  * @var: variable to be added
  * @val: value to be added
@@ -65,7 +65,7 @@ int modify_node_env(env_t **head, char *new_var, char *new_val)
 }
 
 /**
- * remove_node_env - removes node from linked list
+ * remove_node_env - removes node with a specific variable name from linked list
  * @head: beginning of linked list
  * @var: var of node to be removed from linked list
  *
@@ -101,7 +101,7 @@ int remove_node_env(env_t **head, char *var)
 }
 
 /**
- * fetch_node - fetches a node of a given var
+ * fetch_node - fetches a node of a given variable name form the linked list
  * @head: head of list
  * @var: value to match of the node to fetch
  *
