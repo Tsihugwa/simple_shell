@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * link_count - counts number of nodes in linked list
+ * link_count - counts number of nodes in a linked list of environment variables
  * @head: pointer to head of linked list
  *
  * Return: number of nodes
@@ -24,7 +24,7 @@ unsigned int link_count(env_t *head)
 }
 
 /**
- * env_list - creates a linked list of all environ variables
+ * env_list - creates a linked list of all environmental variables
  *
  * Return: head (pointer to first node of linked list of environ variables)
  */
@@ -49,8 +49,9 @@ env_t *env_list(void)
 }
 
 /**
- * link_to_dpointer - converts linked list to double pointer
- * @head: head pointer to head of linked list
+ * link_to_dpointer - converts linked list of environment variables to double 
+ * pointer
+ * @head: pointer to head of linked list
  *
  * Return: array of pointers, pointing to strings
  */
