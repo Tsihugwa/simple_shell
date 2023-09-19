@@ -31,6 +31,14 @@ with other commands located in the system's PATH.  Output and functionality from
 commands is designed to replicate output from the shell `sh` (dash) and some
 bash commands.
 
+### Here is a dummy flowchart
+start → input command (read and parse)→ Is it exit? → No? → is it a wildcard character(*.c - all the .c files) → No? → parsing → piping/redirection → no? →executable/shell built-in → yes? → execute command → display output(standard output) → stop
+
+is it exit? → yes? → Terminate → stop
+is it a wildcard character(*.c - all the .c files) → yes? → wildcard globbing - Parsing
+piping/redirection → yes? → pipe and redirection handler → executable/shell built in
+shell built in/ executable → No? → display error(standard error) → input command
+
 
 ## Usage
 
