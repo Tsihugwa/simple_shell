@@ -1,8 +1,9 @@
 #include "shell.h"
 
 /**
- * freeall - function to free all allocated memory
- * @arginv: args inventory
+ * freeall -  freeing all allocated memory related to the shell's argument 
+ * inventory and associated data structures
+ * @arginv: pointer to arguments inventory
  *
  * Return: 0 on success, 1 on failure
  */
@@ -28,7 +29,7 @@ int freeall(arg_inventory_t *arginv)
 }
 
 /**
- * free_alias - function to free all allocated memory
+ * free_alias - function to free all memory used by alias linked list
  * @head: head of alias
  *
  * Return: 0 on success, 1 on failure
@@ -50,7 +51,8 @@ int free_alias(alias_t *head)
 }
 
 /**
- * free_environ - function to free all allocated memory
+ * free_environ - function to free memory used by the custom environment 
+ * variable linked list.
  * @head: head of custom _environ
  *
  * Return: 0 on success, 1 on failure
@@ -72,7 +74,8 @@ int free_environ(env_t *head)
 }
 
 /**
- * free_history - function to free all allocated memory
+ * free_history - function to free memory used by the command history
+ * linked list.
  * @head: history linked list
  *
  * Return: 0 on success, 1 on failure
