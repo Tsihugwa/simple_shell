@@ -19,7 +19,8 @@ arg_inventory_t *buildarginv(void)
 	arginv->exit_status = 0;
 
 	/* initialize history and history file */
-	arginv->history_file = set_name(arginv->envlist, "/.simple_shell_history");
+	arginv->history_file = set_name(arginv->envlist,
+					"/.simple_shell_history");
 	arginv->history = history_list(arginv);
 
 	/* initialize the aliases and alias file */
@@ -31,7 +32,7 @@ arg_inventory_t *buildarginv(void)
 }
 
 /**
- * set_name - appends home directory absolure path to filename
+ * set_name - appends user's home directory absolute path to a given filename
  * @envlist: the linked list to environ variables
  * @name: the name of the file to be written
  *
