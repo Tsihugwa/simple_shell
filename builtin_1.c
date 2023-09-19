@@ -40,7 +40,7 @@ int _history(arg_inventory_t *arginv)
 }
 
 /**
- * _setenv - sets new environmental variable
+ * _setenv - sets new environment variable
  * @arginv: arguments inventory
  *
  * Return: 0 on success
@@ -76,7 +76,7 @@ int _setenv(arg_inventory_t *arginv)
 }
 
 /**
- * _unsetenv - removes an existing environmental variable
+ * _unsetenv - removes an existing environment variable
  * @arginv: arguments inventory
  *
  * Return: 0 on success
