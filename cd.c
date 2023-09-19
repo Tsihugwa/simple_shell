@@ -1,9 +1,10 @@
 #include "shell.h"
 
 /**
- * file_path - assembles path to cd into
- * @commands: array of pointer pointg to commands
- * @envlist: head of env linked list
+ * file_path - assembles path to change current directory based on user input
+ * into,
+ * @commands: array of pointer pointing to commands
+ * @envlist: head of environmet variable linked list, contains values like pwd
  *
  * Return: full filepath
  */
@@ -39,8 +40,8 @@ char *file_path(char **commands, env_t *envlist)
 
 
 /**
- * _cd - builtin cd function
- * @arginv: arg inventory
+ * _cd - builtin cd(change directory) function for the shell
+ * @arginv: pointer to an argument inventory
  *
  * Return: 0 if good, -1 if bad
  */
