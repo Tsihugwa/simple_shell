@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * help_history - help function to explain how the associated function works
+ * help_history - provides help and usage information for the "history" command.
  */
 void help_history(void)
 {
@@ -10,7 +10,7 @@ void help_history(void)
 }
 
 /**
- * help_setenv - help function to explain how the associated function works
+ * help_setenv - provides help and usage information for the "setenv" command
  */
 void help_setenv(void)
 {
@@ -19,7 +19,7 @@ void help_setenv(void)
 }
 
 /**
- * help_unsetenv - help function to explain how the associated function works
+ * help_unsetenv -  provides help and usage information for the "unsetenv" command
  */
 void help_unsetenv(void)
 {
