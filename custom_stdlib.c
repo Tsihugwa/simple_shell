@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _isspace - checks if input char is a space character
+ * _isspace - checks if input char is a whitespace character
  * @c: input character
  *
  * Return: 1 on success, 0 on failure
@@ -25,7 +25,7 @@ char _isspace(char c)
 }
 
 /**
- * _atoi - returns integer values from string
+ * _atoi - converts string to integer
  * @s: input string
  *
  * Return: will return integer
@@ -49,7 +49,7 @@ int _atoi(char *s)
 }
 
 /**
- * _perror - custom perror
+ * _perror - custom implementation of the perror function
  * @string: input error string to write to stderr
  *
  * Return: void
@@ -64,8 +64,8 @@ void _perror(char *string)
 }
 
 /**
- * _memmove - shifting an array
- * @dest: dest
+ * _memmove - shift an array of bytes from a source to a destination.
+ * @dest: destination
  * @src: source
  * @n: bytes to move
  */
@@ -87,7 +87,8 @@ void _memmove(void *dest, void *src, size_t n)
 }
 
 /**
- * is_uint - checks if input string is unsigned int
+ * is_uint - checks if a given string represents an unsigned integer.
+ * It takes a string num as input.
  * @num: the input number
  * Return: TRUE or FALSE
  */
