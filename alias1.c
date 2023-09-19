@@ -17,7 +17,7 @@ alias_t *alias_list(void)
 }
 
 /**
- * add_node_alias - builtin func to set alias
+ * add_node_alias - builtin func to add a new alias to the list
  * @head: head of alias list
  * @alias: alias ot add
  * @command: actual command equivalent to alias
