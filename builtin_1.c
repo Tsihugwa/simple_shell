@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * _env - writes env to stdout
- * @arginv: arguments inventory
+ * _env - writes the environment variables to the standard output (stdout)
+ * @arginv: pointer to arguments inventory
  *
  * Return: 0 on success
  */
@@ -76,7 +76,7 @@ int _setenv(arg_inventory_t *arginv)
 }
 
 /**
- * _unsetenv - sets new environmental variable
+ * _unsetenv - removes an existing environmental variable
  * @arginv: arguments inventory
  *
  * Return: 0 on success
