@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * history_list - initializes linked list of history from history file in $HOME
+ * history_list - initializes a linked list of command history from a history 
+ * file in the user's $HOME directory.
  * @arginv: arguments inventory
  *
  * Return: head (pointer to first node of linked list of environ variables)
@@ -47,7 +48,8 @@ history_t *history_list(arg_inventory_t *arginv)
 }
 
 /**
- * init_history - initializes history using history file converted to buffer
+ * init_history - initializes the history linked list using the contents of a
+ * buffer obtained from the history file
  * @head: head of linked list of history commands
  * @buffer: old history backup converted to string
  *
