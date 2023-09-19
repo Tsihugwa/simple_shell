@@ -6,10 +6,12 @@ processes of the 'sh' shell or 'bash' shell.
 ### So, what's the deal with shell?
 Basically, it takes a command, reads it, interprets it, and then executes it. It looks through a directory/file path to find the command you need, and then the kernel translates it all. You've got built-in commands (like cd) and executable files (which you call by name).
 When you read a command, it breaks it into individual words. For example, echo “my name is Jane Doe” > README.md has the individual words echo, a string, redirection sign, and the new file name. That's called parsing/tokenization.
-Then it's time to execute the command. This is where a lot of time is spent.
+Then it's time to execute the command.
+
 For more information view the blog post of Ibrahim Morketa & Simegnew Misganaw
 [here](https://medium.com/@ibrahimbsc8/simple-shell-a-custom-shell-command-line-interpreter-a0d11d5b219f)
-Or check out cool resources on youtube like this [here]https://www.youtube.com/watch?v=4jYFqFsu03A
+
+Or check out cool resources on youtube like this [here](https://www.youtube.com/watch?v=4jYFqFsu03A)
 
 ### C language standard functions and system calls utilized
 
@@ -28,6 +30,7 @@ services.  This shell has a set of custom built-in commands, and also integrates
 with other commands located in the system's PATH.  Output and functionality from
 commands is designed to replicate output from the shell `sh` (dash) and some
 bash commands.
+
 
 ## Usage
 
