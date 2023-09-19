@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * save_alias - saves alias definitions to  file
- * @arginv: arguments inventory
+ * save_alias - saves alias definitions to a file
+ * @arginv: pointer to arguments inventory
  *
  * Return: 0 success, 1 failure
  */
@@ -34,8 +34,8 @@ int save_alias(arg_inventory_t *arginv)
 }
 
 /**
- * load_alias - loads alias definitions from file
- * @arginv: arguments inventory
+ * load_alias - loads alias definitions from file into the shell
+ * @arginv: pointer to arguments inventory
  *
  * Return: 0 success, 1 failure
  */
@@ -73,7 +73,8 @@ int load_alias(arg_inventory_t *arginv)
 }
 
 /**
- * fetch_node_alias - fetches a node of a given alias
+ * fetch_node_alias - fetches a node of a specific alias from a linked list of
+ * alias data structures
  * @head: head of list
  * @var: alias to match of the node to fetch
  *
